@@ -4,17 +4,21 @@
   {%- include head.html -%}
 
   <body>
+    <turbo-frame id="site" target="content">
 
-    {%- include header.html -%}
+      {%- include header.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+      <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+          <turbo-frame id="content">
+            {{ content }}
+          </turbo-frame>
+        </div>
+      </main>
 
-    {%- include footer.html -%}
+      {%- include footer.html -%}
 
+    </turbo-frame>
   </body>
 
 </html>
