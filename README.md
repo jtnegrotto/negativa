@@ -14,7 +14,7 @@
 Add this line to your Jekyll site's Gemfile:
 
 ```ruby
-gem "minima"
+gem "turbine"
 ```
 
 And then execute:
