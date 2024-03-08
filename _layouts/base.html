@@ -4,13 +4,13 @@
   {%- include head.html -%}
 
   <body>
-    <turbo-frame id="site" target="content">
+    <turbo-frame id="site" target="content" data-turbo-action="advance">
 
       {%- include header.html -%}
 
       <main class="page-content" aria-label="Content">
         <div class="wrapper">
-          <turbo-frame id="content">
+          <turbo-frame id="content" data-turbo-action="advance">
             {{ content }}
           </turbo-frame>
         </div>
