@@ -9,6 +9,15 @@
     {%- include google-analytics.html -%}
   {%- endif -%}
 
+  <script type="importmap">
+    {
+      "imports": {
+        "turbo": "https://unpkg.com/@hotwired/turbo@8.0.4/dist/turbo.es2017-esm.js"
+      }
+    }
+  </script>
+  <script type="module" src="{{ "/assets/js/minima.js" | relative_url }}"></script>
+
   {%- include custom-head.html -%}
-  
+
 </head>
