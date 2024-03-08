@@ -30,8 +30,8 @@ minima:
 show_excerpts: false # set to true to show excerpts on the homepage
 
 # Build settings
-baseurl: /minima
-remote_theme: jekyll/minima
+baseurl: /negativa
+remote_theme: jtnegrotto/negativa
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
